@@ -12,9 +12,11 @@
 		28406A8920D9445300B2DA73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28406A8720D9445300B2DA73 /* Main.storyboard */; };
 		28406A8B20D9445500B2DA73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28406A8A20D9445500B2DA73 /* Assets.xcassets */; };
 		28406A8E20D9445500B2DA73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28406A8C20D9445500B2DA73 /* LaunchScreen.storyboard */; };
+		5C3B12EA2A5243389A2A095F /* Pods_detectnetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FDDD2B5FAB802BD621F55E /* Pods_detectnetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20FDDD2B5FAB802BD621F55E /* Pods_detectnetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_detectnetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28406A8020D9445300B2DA73 /* detectnetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = detectnetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28406A8320D9445300B2DA73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28406A8520D9445300B2DA73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		28406A8A20D9445500B2DA73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28406A8D20D9445500B2DA73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28406A8F20D9445500B2DA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D2CEE4255E8DE0E5044BC20 /* Pods-detectnetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-detectnetwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-detectnetwork/Pods-detectnetwork.debug.xcconfig"; sourceTree = "<group>"; };
+		DA0D70492DA09D5EA48C3CA2 /* Pods-detectnetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-detectnetwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-detectnetwork/Pods-detectnetwork.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C3B12EA2A5243389A2A095F /* Pods_detectnetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02A9EF47AC3276687B8C566C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D2CEE4255E8DE0E5044BC20 /* Pods-detectnetwork.debug.xcconfig */,
+				DA0D70492DA09D5EA48C3CA2 /* Pods-detectnetwork.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		176CF1C5C85E1DFC9986CBE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20FDDD2B5FAB802BD621F55E /* Pods_detectnetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		28406A7720D9445300B2DA73 = {
 			isa = PBXGroup;
 			children = (
 				28406A8220D9445300B2DA73 /* detectnetwork */,
 				28406A8120D9445300B2DA73 /* Products */,
+				02A9EF47AC3276687B8C566C /* Pods */,
+				176CF1C5C85E1DFC9986CBE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28406A9220D9445500B2DA73 /* Build configuration list for PBXNativeTarget "detectnetwork" */;
 			buildPhases = (
+				4F3A56663665DFF8593D2CAF /* [CP] Check Pods Manifest.lock */,
 				28406A7C20D9445300B2DA73 /* Sources */,
 				28406A7D20D9445300B2DA73 /* Frameworks */,
 				28406A7E20D9445300B2DA73 /* Resources */,
+				A2951D671BD982911187441A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F3A56663665DFF8593D2CAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-detectnetwork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2951D671BD982911187441A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-detectnetwork/Pods-detectnetwork-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TPCreativeSwift/TPCreativeSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPCreativeSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-detectnetwork/Pods-detectnetwork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		28406A7C20D9445300B2DA73 /* Sources */ = {
@@ -278,14 +343,14 @@
 		};
 		28406A9320D9445500B2DA73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D2CEE4255E8DE0E5044BC20 /* Pods-detectnetwork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AQHNXZHZ8T;
 				INFOPLIST_FILE = detectnetwork/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.tpcreative.detectnetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -295,14 +360,14 @@
 		};
 		28406A9420D9445500B2DA73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA0D70492DA09D5EA48C3CA2 /* Pods-detectnetwork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AQHNXZHZ8T;
 				INFOPLIST_FILE = detectnetwork/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.tpcreative.detectnetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

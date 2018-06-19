@@ -1,0 +1,16 @@
+PODS:
+  - TPCreativeSwift (0.0.6)
+
+DEPENDENCIES:
+  - TPCreativeSwift (~> 0.0.6)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - TPCreativeSwift
+
+SPEC CHECKSUMS:
+  TPCreativeSwift: dd7f0b004d71343ccfdd319a5a3fc7961cc2d509
+
+PODFILE CHECKSUM: b9c67c2c040f9da2b4d97a82428680af6d67599f
+
+COCOAPODS: 1.5.2
